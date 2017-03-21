@@ -1,6 +1,7 @@
-个人博客PHP+MYSQL后台
+#个人博客PHP+MYSQL后台
 注：数据库sql脚本文件在SQL文件夹里（数据库名为：blog,数据表名为：article/land）
-## src文件夹下有未被压缩合并的源文件
+src文件夹下有未被压缩合并的源文件
+dist文件夹压缩后的文件
 
 1.在reg.php和land.php里使用md5()函数给用户密码加密
 $password = md5(addslashes(htmlspecialchars($_POST['password'])));
