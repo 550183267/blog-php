@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>个人博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body screen_capture_injected="true">
+    <!-- 导航 -->
+    <!--smaill-sidebar-->
+    <nav class="sidebar-xs">
+        <div class="inside">
+            <h2><a href="index.html">个人博客</a></h2>
+            <div class="right-nav">
+                <a class="tit tabin"><i class="iconfont icon-wendang"></i>技术文档</a>
+                <a class="tit"><i class="iconfont icon-44"></i>前端笔记</a>
+                <!-- 进后台管理按钮 -->
+                <a href="admin.html" class="ht"><i class="iconfont icon-houtaiguanli"></i>后台管理</a>
+            </div>
+        </div>
+    </nav>
+    <!--main-->
+    <main class="clearfix">
+        <!--sidebar-->
+        <aside id="sidebar">
+            <div class="navbox inside">
+                <h2><a href="index.html">个人博客</a></h2>
+                <ul class="nav">
+                    <li><a class="tit tabin"><i class="iconfont icon-wendang"></i>技术文档</a></li>
+                    <li><a class="tit"><i class="iconfont icon-44"></i>前端笔记</a></li>
+                    <li><a href="admin.html"><i class="iconfont icon-houtaiguanli"></i>后台管理</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!--end sidebar-->
+        <!--main content-->
+        <div class="main_content" id="content">
+            <!-- 文章简介 -->
+            <div id="list" class="list-group">
+                <div></div>
+            </div>
+        </div>
+        <!--end main content-->
+    </main>
+    <div class="top"></div>
+    <script src="javascripts/jquery2.2.1.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/side.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#sidebar').stickySidebar({
+            sidebarTopMargin: 40,
+            footerThreshold: 100
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>用户登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/land.css">
+</head>
+
+<body screen_capture_injected="true">
+    <div class="demo-1">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <!-- 登陆区域 -->
+                <div class="container main-title">
+                    <div class="jq22-container">
+                        <div class="login-wrap">
+                            <div class="login-html">
+                                <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+                                <label for="tab-1" class="tab">登陆</label>
+                                <input id="tab-2" type="radio" name="tab" class="sign-up">
+                                <label for="tab-2" class="tab">注册</label>
+                                <div class="login-form">
+                                    <div class="sign-in-htm">
+                                        <form action="../php/land.php" method="post" role="form">
+                                            <div class="group">
+                                                <label for="user" class="label" placeholder="user">Username</label>
+                                                <input id="user" name="user" type="text" class="input">
+                                            </div>
+                                            <div class="group">
+                                                <label for="pass" class="label" placeholder="password">Password</label>
+                                                <input id="pass" name="password" type="password" class="input" data-type="password">
+                                            </div>
+                                            <div class="group">
+                                                <input type="submit" class="button" id="land" name="land" value="登陆">
+                                            </div>
+                                        </form>
+                                        <div class="hr"></div>
+                                    </div>
+                                    <div class="sign-up-htm">
+                                        <form action="../php/reg.php" method="post">
+                                            <div class="group">
+                                                <label for="user" class="label">Username</label>
+                                                <input id="user" name="user" type="text" class="input">
+                                            </div>
+                                            <div class="group">
+                                                <label for="pass" class="label">Password</label>
+                                                <input id="pass" name="password" type="password" class="input" data-type="password">
+                                            </div>
+                                            <div class="group">
+                                                <input type="submit" class="button" value="注册">
+                                            </div>
+                                        </form>
+                                        <div class="hr"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascripts/jquery2.2.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/TweenLite.min.js"></script>
+    <script type="text/javascript" src="javascripts/EasePack.min.js"></script>
+    <script type="text/javascript" src="javascripts/land.js"></script>
+</body>
+
+</html>

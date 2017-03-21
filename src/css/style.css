@@ -1,0 +1,194 @@
+/*固定导航*/
+/* HTML ELEMENTS....................................... */
+
+body {
+    background: #f2f2f2;
+    color: #666;
+    font: 13px/1.4em 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+a {
+    cursor: pointer;
+}
+
+:focus {
+    outline: 0
+}
+
+:link,
+:visited {
+    text-decoration: none
+}
+
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/* Main ................ */
+
+main {
+    margin: 40px auto;
+    max-width: 940px;
+}
+
+
+/* aside */
+
+aside {
+    float: left;
+    max-width: 220px;
+}
+
+.inside {
+    padding: 0 20px;
+}
+
+#sidebar.sticky {
+    float: none;
+    position: fixed;
+    top: 20px;
+    z-index: 6;
+    left: auto;
+}
+
+.sidebar-xs {
+    display: none;
+}
+
+
+/* main content */
+
+.main_content {
+    float: right;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.nav a i {
+    margin: 5px;
+}
+
+.demo {
+    margin: 60px auto;
+    width: 720px;
+}
+
+.navbox {
+    float: left;
+}
+
+ul.nav {
+    width: 100%;
+    padding: 60px 0;
+    background: url(../images/shad2.png) no-repeat;
+}
+
+ul.nav li {
+    margin: 5px 0 0 0;
+}
+
+ul.nav li a {
+    background-repeat: no-repeat;
+    background-image: url(../images/border.png);
+    background-color: #FFFFFF;
+    color: #174867;
+    padding: 7px 15px 7px 15px;
+    width: 130px;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-box-shadow: 2px 2px 4px #EDEDED;
+    -moz-box-shadow: 2px 2px 4px #888;
+    -o-box-shadow: 2px 2px 4px #888;
+    border-left: 0px solid #CCCCCC;
+    border-right: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    border-top: 1px solid #E3E3E3;
+    box-shadow: 2px 2px 4px #EDEDED;
+}
+
+ul.nav li a:hover {
+    background: #ebebeb url(../images/border.png) no-repeat;
+    color: #67a5cd;
+    padding: 7px 15px 7px 30px;
+}
+
+.top {
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+    display: block;
+    width: 38px;
+    height: 40px;
+    cursor: pointer;
+    background: #c9c9c9 url(../images/top.png) no-repeat center;
+    background-size: 38px 40px;
+    bottom: 40px;
+}
+.top:hover{
+    background-color: #7b7b7b;
+}
+
+/* 超小屏幕（手机，小于 768px） */
+
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+    }
+    #sidebar {
+        display: none;
+    }
+    .sidebar-xs {
+        display: block;
+        background-color: #ceedef;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px rgba(212, 212, 212, 0.91);
+    }
+    .sidebar-xs h2 {
+        float: left;
+        display: inline-block;
+        margin: auto;
+    }
+    .inside {
+        padding: 20px;
+    }
+    .right-nav {
+        text-align: right;
+        height: auto;
+        font-size: 10px;
+    }
+    .right-nav a {
+        margin: 10px 0 0;
+        display: inline-block;
+        color: #000;
+    }
+    .right-nav a i {
+        margin: 5px;
+    }
+    .ht,
+    .tc {
+        text-align: center;
+        display: inline-block;
+    }
+    .main_content {
+        float: none;
+        margin-top: 0;
+    }
+}

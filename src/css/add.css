@@ -1,0 +1,45 @@
+body {
+    background-color: #e7f7fb;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*添加文档*/
+
+#add a {
+    color: #fff;
+}
+
+.add-con {
+    margin: 50px auto;
+}
+
+.mod-con {
+    /*    background-color: #fff;
+    border-radius: 10px;*/
+}
+
+.modal-body {
+    min-height: 350px;
+}
+
+.add-a,
+.mod-a {
+    margin: 10px 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+
+/* 超小屏幕（手机，小于 768px） */
+
+@media (max-width: 768px) {
+    .add-con {
+        margin: 10px auto 0;
+    }
+    .add-a,
+    .mod-a {
+        height: auto;
+    }
+}
